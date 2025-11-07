@@ -11,7 +11,7 @@
     <form action="Procesar_Registro1.php" method="post">
 
         <label>Usuario:</label>
-        <input type="text" name="Usuario" required><br>
+        <input type="text" name="usuario" required><br>
 
         <label>Contraseña:</label>
         <input type="password" name="password" required><br>
