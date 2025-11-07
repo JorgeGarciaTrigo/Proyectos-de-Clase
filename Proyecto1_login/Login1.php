@@ -7,10 +7,15 @@
     <style>
 
         body {
-            background: linear-gradient(100deg, blueviolet, goldenrod );
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(20deg, blueviolet, goldenrod );
+            height: 100vh;
         }
 
-        .Titúlo1 {
+
+        .Titulo1 {
             color: chartreuse;
             text-align: center;
         }
@@ -22,18 +27,18 @@
             text-align: center;
         }
         .Botón1 {
-            color: chartreuse;
             text-align: center;
         }
-
-
+        .Cuenta1 {
+            text-align: center;
+        }
 
     </style>
 
 </head>
 <body>
     
-    <div class="Titúlo1">
+    <div class="Titulo1">
 
         <h1>Login</h1>
 
@@ -56,7 +61,7 @@
         </div>
 
         <div class="Botón1">
-            <button type="submit">Entrar</button>
+            <button style="background-color: chartreuse;" type="submit">Entrar</button>
 
         </div>
 
