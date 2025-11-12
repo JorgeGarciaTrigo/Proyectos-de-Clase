@@ -4,36 +4,7 @@
     <meta charset="UTF-8">
     <title>Iniciar Sesion</title>
 
-    <style>
-
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: linear-gradient(20deg, blueviolet, goldenrod );
-            height: 100vh;
-        }
-
-
-        .Titulo1 {
-            color: chartreuse;
-            text-align: center;
-        }
-
-        .Usuario1 {
-            text-align: center;
-        }
-        .Contraseña1 {
-            text-align: center;
-        }
-        .Botón1 {
-            text-align: center;
-        }
-        .Cuenta1 {
-            text-align: center;
-        }
-
-    </style>
+<link rel="stylesheet" href="ContenidoL1.CSS">
 
 </head>
 <body>
