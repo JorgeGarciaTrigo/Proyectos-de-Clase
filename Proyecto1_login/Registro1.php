@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Registto de usuario</title>
+
+    <link rel="stylesheet" href="ContenidoR1.CSS">
+
 </head>
 <body>
 
+    <div class="Titulo1">
+
     <h1>Registro</h1>
+
+    </div>
+
 
     <form action="Procesar_Registro1.php" method="post">
 
-        <label>Usuario:</label>
-        <input type="text" name="suario" required><br>
+        <div class="Usuario1">
+        
+            <label>Usuario:</label>
+            <input type="text" name="usuario" required><br>
 
-        <label>Contraseña:</label>
-        <input type="password" name="password" required><br>
+        </div>
 
-        <button type="submit">Registrarse</button>
+        <div class="Contraseña1">
+        
+            <label>Contraseña:</label>
+            <input type="password" name="password" required><br>
+
+        </div>
+
+        <div class="Botón1">
+
+            <button style="background-color: chartreuse;" type="submit">Registrarse</button>
+
+        </div>
 
     </form>
 
-    <p>¿Ya tienes cuenta?<a href="Login1.php">Iniciar sesion aquí</a></p>
+    <div class="Cuenta1">
     
+        <p>¿Ya tienes cuenta?<a href="Login1.php">Iniciar sesion aquí</a></p>
+    
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(20deg, blueviolet, goldenrod );
+    height: 100vh;
+}
+
+.Titulo1 {
+    color: chartreuse;
+    text-align: center;
+}
+
+.Texto1 {
+    color: chartreuse;
+    text-align: center;
+}
+
+.Cuenta1 {
+    text-align: center;
+}

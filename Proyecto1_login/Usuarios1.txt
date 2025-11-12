@@ -3,3 +3,4 @@ Juan:$2y$10$IltWUqRkJw/Ka5TKhOB6SO/j259ECNuwWlHh2BIhcwWIfC5Mw5./y
 Juan:$2y$10$k87HrXeo3ZGL9wxEseO49uDu/tJ.KGOMbS1rFd4MGtcVIgg/DZ1qq
 Pepe:$2y$10$VPM3xliJ5xOz3XAC/GVih.UXlyK7NBlMTkeOQBbz2VpKrjmQBsJxy
 Miguel:$2y$10$G6H1gznhSoGOgvqt16Mcne6JplHFWKaSDKgCb8rJVp4/R7708fG7u
+Juanito:$2y$10$aIysW4gNLYrgSC7AqE8gzOFlnkJ6sHJJldMxYIZay1pesaznSL/o2

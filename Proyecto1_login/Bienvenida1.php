@@ -11,12 +11,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Bienvenida</title>
+
+    <link rel="stylesheet" href="ContenidoB1.CSS">
+
 </head>
 <body>
 
-    <h1>Bienvenido, <?php echo $_SESSION["usuario"]; ?></h1>
-    <p>Has iniciado sesión correctamente.</p>
-    <p><a href="Logout1.php">Cerrar sesión</a></p>
+    <div class="Titulo1">
+        <h1>Bienvenido, <?php echo $_SESSION["usuario"]; ?></h1>
+    </div>
     
+    <div class="Texto1">
+        <p>Has iniciado sesión correctamente.</p>
+    </div>
+
+    <div class="Cuenta1">
+        <p><a href="Logout1.php">Cerrar sesión</a></p>
+    </div>
+
 </body>
 </html>
