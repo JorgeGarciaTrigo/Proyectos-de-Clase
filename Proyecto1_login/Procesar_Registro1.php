@@ -31,7 +31,7 @@ foreach ($lineas as $linea) {
 if ($existe) {
 
     echo "<div class='Titulo1'>";
-    echo "<h1>El usuario ya existe</h1>";
+    echo "<h1>El ciudadano ya existe</h1>";
     echo "</div>";
 
     echo "<div class='Cuenta1'>";
