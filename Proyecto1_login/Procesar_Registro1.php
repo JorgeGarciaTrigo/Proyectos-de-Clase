@@ -32,6 +32,11 @@ if ($existe) {
 
     echo "<div class='Titulo1'>";
     echo "<h1>El ciudadano ya existe</h1>";
+    echo "<br>";
+    echo "</div>";
+
+    echo "<div class='Plagiar1'>";
+    echo "<h2>No intentes plagiar</h2>";
     echo "</div>";
 
     echo "<div class='Cuenta1'>";
