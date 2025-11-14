@@ -4,7 +4,7 @@ session_start();
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
-$fichero = file("Usuarios1.txt", FILE_IGNORE_NEW_LINES);
+$fichero = file("usuario.txt", FILE_IGNORE_NEW_LINES);
 
 $login_exitoso = false;
 foreach ($fichero as $linea) {

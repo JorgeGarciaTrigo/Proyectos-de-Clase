@@ -6,7 +6,7 @@ echo "<body>";
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
-$archivo = "Usuarios1.txt";
+$archivo = "usuario.txt";
 
 if (!file_exists($archivo)) {
     file_put_contents($archivo, "");
@@ -57,3 +57,15 @@ echo "</div>";
 echo "</body>";
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ContenidoPR1.CSS">
+</head>
+<body>
+    
+</body>
+</html>
