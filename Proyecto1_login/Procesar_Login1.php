@@ -25,7 +25,7 @@ if ($login_exitoso) {
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="ContenidoPL1.css">
+    <link rel="stylesheet" href="ContenidoPL1.CSS">
 </head>
 <body>
 
