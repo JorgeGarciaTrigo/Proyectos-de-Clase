@@ -11,7 +11,9 @@
 
     <div class="Titulo1">
 
-    <h1>Registro</h1>
+    <h1>Web de Torrejón</h1>
+
+    <h2>Registro</h2>
 
     </div>
 
@@ -42,7 +44,7 @@
 
     <div class="Cuenta1">
     
-        <p>¿Ya tienes cuenta?<a href="Login1.php">Iniciar sesion aquí</a></p>
+        <p>¿Ya eres un ciudadano? <a href="Login1.php">Iniciar sesion aquí</a></p>
     
     </div>
 

@@ -18,7 +18,7 @@
 <body>
 
     <div class="Titulo1">
-        <h1>Bienvenido, <?php echo $_SESSION["usuario"]; ?></h1>
+        <h1>Bienvenido, ciudadano <?php echo $_SESSION["usuario"]; ?></h1>
     </div>
     
     <div class="Texto1">

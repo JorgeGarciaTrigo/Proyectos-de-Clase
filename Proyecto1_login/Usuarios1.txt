@@ -1,10 +1,3 @@
 Miguel:$2y$10$G6H1gznhSoGOgvqt16Mcne6JplHFWKaSDKgCb8rJVp4/R7708fG7u
 Juanito:$2y$10$aIysW4gNLYrgSC7AqE8gzOFlnkJ6sHJJldMxYIZay1pesaznSL/o2
 Gabriel:$2y$10$OvUaiflfZBVqx9EJZFyxku.rcJTxocVr68G3VuDiPsfiX.1O4./nq
-
-Luis:$2y$10$TEzJAFTP6kiPSmIpytSeLeNT2hHc1lx0O/GpL/HXD04oI5NQ93M5G
-Luis:$2y$10$RW0cuIcPNpnZbMHoKazkIejUusnq5CteUZkQD5kk4SJ7yVm1ITlValuis:$2y$10$HkOwLAvAtRfHyel2Esh6M.YrogponslBjRb.O69Ji5typCniez0OC
-luis:$2y$10$jVrPgEgI.1ycxMLdudREwOMvJkBMzV4aBhaPuq75bYrKUiYyK2Dh2
-Alejandro:$2y$10$FyimDa4EHkiFQx1rriXluOQWEzGS/7XjwCVYG4BopqaJpkUeDZb/a
-Pedro:$2y$10$k8gfkyMsi2IVnTGgUeaNN.R33/1wP4HGIhCFfNhVq2AceoZvXrsdW
-Ale:$2y$10$QR2ryRvWFJWx0rkvc.F6ouNTA1pbjYMdA5LSvAcre3ffX2RAAWF/2

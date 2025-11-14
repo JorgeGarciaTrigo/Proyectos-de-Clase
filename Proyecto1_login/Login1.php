@@ -11,7 +11,9 @@
     
     <div class="Titulo1">
 
-        <h1>Login</h1>
+        <h1>Web de Torrejón</h1>
+
+        <h2>Login</h2>
 
     </div>
 
@@ -40,7 +42,7 @@
     
     <div class="Cuenta1">
 
-        <p>¿No tienes cuenta?<a href="Registro1.php">Registrate aquí</a></p>
+        <p>¿No eres un ciudadano? <a href="Registro1.php">Registrate aquí</a></p>
 
     </div>
 
