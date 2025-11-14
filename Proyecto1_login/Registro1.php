@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registto de usuario</title>
+    <title>Registro de usuario</title>
 
     <link rel="stylesheet" href="ContenidoR1.CSS">
 

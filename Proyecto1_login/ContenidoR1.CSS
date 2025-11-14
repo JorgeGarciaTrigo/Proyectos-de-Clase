@@ -27,6 +27,11 @@ body {
     text-align: center;
 }
 
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 
 
