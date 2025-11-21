@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <title>Registro</title>
 
-
+<link rel="stylesheet" href="Contenido2.css">
 
 </head>
 <body>
 
-    <h1>Registro de usuairo</h1>
+<div class="burbuja b1"></div>
+<div class="burbuja b2"></div>
+<div class="burbuja b3"></div>
+<div class="burbuja b4"></div>
+<div class="burbuja b5"></div>
+
+    <h1>Registro del pescador</h1>
 
     <form action="Procesar_Registro2.php" method="post">
 
@@ -23,7 +29,7 @@
     
     </form>
 
-    <p>¿Ya tienes cuenta? <a href="Login2.php">Inicia sesión aquí</a></p>
+    <p>¿Ya tienes licencia? <a href="Login2.php">Empieza la pesca aquí</a></p>
 
 </body>
 </html>

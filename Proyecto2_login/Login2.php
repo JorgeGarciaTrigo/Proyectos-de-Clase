@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <title>Login</title>
 
-
+<link rel="stylesheet" href="Contenido2.css">
 
 </head>
 <body>
     
-    <h1>Iniciar sesión</h1>
+<div class="burbuja b1"></div>
+<div class="burbuja b2"></div>
+<div class="burbuja b3"></div>
+<div class="burbuja b4"></div>
+<div class="burbuja b5"></div>
+
+    <h1>Iniciar el registro de pesca</h1>
     <form action="Procesar_Login2.php" method="post">
         
         <label>Usuario:</label>
@@ -22,7 +28,7 @@
 
     </form>
 
-    <p>¿No tienes cuenta?<a href="Registro2.php">Regístrate aquí</a></p>
+    <p>¿No tienes registro de pescador? <a href="Registro2.php">Puedes hacerlo aquí</a></p>
 
 </body>
 </html>

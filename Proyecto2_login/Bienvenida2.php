@@ -14,14 +14,20 @@ if(!isset($_SESSION['Usuario'])) {
     <meta charset="UTF-8">
     <title>Bienvenida</title>
 
-
+<link rel="stylesheet" href="Contenido2.css">
 
 </head>
 <body>
 
-    <h1>Bienvenido, <?php echo $_SESSION['Usuario']; ?></h1>
-    <p>Has iniciado sesión correctamente.</p>
-    <p><a href="Logout2.php">Cerrar sesión</a></p>
+<div class="burbuja b1"></div>
+<div class="burbuja b2"></div>
+<div class="burbuja b3"></div>
+<div class="burbuja b4"></div>
+<div class="burbuja b5"></div>
+
+    <h1>Bienvenido, pescador novato <?php echo $_SESSION['Usuario']; ?></h1>
+    <p>Has podido acceder correctamente correctamente.</p>
+    <p>Para dejar de pescar, <a href="Logout2.php">pulsa aquí</a></p>
 
 </body>
 </html>
