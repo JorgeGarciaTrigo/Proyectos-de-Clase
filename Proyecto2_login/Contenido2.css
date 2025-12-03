@@ -93,7 +93,6 @@ button {
     font-weight: bold;
     transition: 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 183, 255, 0.4);
-    /* Cursor personalizado */
     cursor: url('Fotos_Cursor2/Gota.png') 16 16, pointer;
 }
 
