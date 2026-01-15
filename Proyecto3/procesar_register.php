@@ -1,41 +1,31 @@
 <?php
-include "db.php";
+include "includes/db.php";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_POST) {
+    $nombre = trim($_POST['nombre']);
+    $email = trim($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $edad = $_POST['edad'];
+    $rol = 'user';
 
-    $nombre = trim($_POST["nombre"]);
-    $email = trim($_POST["email"]);
-    $password = $_POST["password"];
-    $password2 = $_POST["password2"];
 
-    if (empty($nombre) || empty($email) || empty($password) || empty($password2)) {
-        header("Location: register.php");
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: register.php?error=email_invalido");
         exit;
     }
 
-    if ($password !== $password2) {
-        header("Location: register.php");
+
+    $check = $pdo->prepare("SELECT id FROM usuarios WHERE email = ?");
+    $check->execute([$email]);
+    
+    if ($check->rowCount() > 0) {
+        header("Location: register.php?error=existe");
         exit;
     }
 
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-
-    $stmt = $pdo->prepare("SELECT id FROM usuarios WHERE email = ?");
-    $stmt->execute([$email]);
-
-    if ($stmt->fetch()) {
-        header("Location: register.php");
-        exit;
+    $stmt = $pdo->prepare("INSERT INTO usuarios (nombre, email, password, edad, rol) VALUES (?,?,?,?,?)");
+    if ($stmt->execute([$nombre, $email, $password, $edad, $rol])) {
+        header("Location: login.php?registrado=1");
     }
-
-    $insert = $pdo->prepare(
-        "INSERT INTO usuarios (nombre, email, password, rol)
-         VALUES (?, ?, ?, 'user')"
-    );
-
-    $insert->execute([$nombre, $email, $hash]);
-
-    header("Location: login.php");
-    exit;
 }
 ?>
