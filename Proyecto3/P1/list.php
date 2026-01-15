@@ -12,6 +12,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Listado de Usuarios</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validacion.js" defer></script>
 
 </head>
 <body>
@@ -19,7 +20,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="container">
 
         <h1>Usuarios</h1>
-        <a class="btn" href="create.php">+ Crear Usuario</a>
 
         <table>
 
@@ -27,7 +27,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <th>ID</th><th>Nombre</th><th>Email</th><th>Edad</th><th>Rol</th><th>Acciones</th>
             </tr>
 
-            <?php foreach ($usuario as $u): ?>
+            <?php foreach ($usuarios as $u): ?>
 
             <tr>
 

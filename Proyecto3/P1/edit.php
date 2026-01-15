@@ -30,6 +30,7 @@ if ($_POST) {
     <title>Editar Usuario</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validacion.js" defer></script>
 
 </head>
 <body>

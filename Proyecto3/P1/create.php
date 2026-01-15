@@ -1,7 +1,7 @@
 <?php
 include "db.php";
 
-if ($_PSOT) {
+if ($_POST) {
     $nombre = $_POST ["nombre"];
     $email = $_POST ["email"];
     $edad = $_POST ["edad"];
@@ -20,6 +20,7 @@ if ($_PSOT) {
     <title>Crear Usuario</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validacion.js" defer></script>
 
 </head>
 <body>
@@ -44,6 +45,7 @@ if ($_PSOT) {
         </form>
 
     </div>
+
 
 </body>
 </html>
