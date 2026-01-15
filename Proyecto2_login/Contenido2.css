@@ -1,57 +1,107 @@
+
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #eaffff; 
+    text-align: center;
+    overflow: hidden; 
     cursor: url('Fotos_Cursor2/Burbuja.png') 16 16, auto;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Trebuchet MS", sans-serif;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+    
+    background: linear-gradient(to bottom, #1e3c72 10%, #2a5298 90%);
     background-attachment: fixed;
-    color: white;
-    text-align: center;
 }
 
+
 h1 {
-    color: #9ee8ff;
-    text-shadow: 0 0 10px rgba(0, 180, 255, 0.8);
-    margin-top: 40px;
+    color: #b3f4ff; 
+    text-shadow: 0 0 15px rgba(179, 244, 255, 0.9);
+    margin-bottom: 25px;
+    z-index: 10;
 }
+
+
+p {
+    margin-top: 25px;
+    z-index: 10;
+    font-size: 1.1em;
+}
+
+
+form {
+    padding: 35px 30px;
+    background: rgba(42, 82, 152, 0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(179, 244, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    max-width: 90%;
+    width: 350px;
+}
+
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b3f4ff;
+}
+
 
 input[type="text"],
 input[type="password"] {
-    width: 250px;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
     border: none;
     outline: none;
-    background: rgba(255,255,255,0.25);
+    background: rgba(255, 255, 255, 0.15);
     color: #eaffff;
     font-size: 16px;
-    box-shadow: inset 0 0 10px rgba(0, 80, 120, 0.4);
+    box-shadow: inset 0 0 8px rgba(0, 150, 255, 0.3);
+    transition: background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 button {
-    width: 250px;
-    padding: 12px;
-    margin-top: 10px;
-    background: #00b7ff;
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #00b1f7;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     color: white;
-    font-size: 18px;
-    transition: 0.3s;
-    box-shadow: 0 0 10px rgba(0, 180, 255, 0.6);
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 183, 255, 0.4);
     cursor: url('Fotos_Cursor2/Gota.png') 16 16, pointer;
 }
 
 button:hover {
     background: #008ecc;
-    box-shadow: 0 0 20px rgba(0, 180, 255, 0.9);
+    box-shadow: 0 0 25px rgba(0, 180, 255, 0.8);
+    transform: translateY(-2px);
 }
+
 
 a {
     color: #b3f4ff;
@@ -62,22 +112,40 @@ a {
 
 a:hover {
     color: #ffffff;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 8px white;
 }
 
-.cursor-rastro {
-    position: fixed;
-    width: 14px;
-    height: 14px;
-    background: rgba(160,210,255,0.8);
+
+.burbuja {
+    position: absolute;
+    background: rgba(160, 210, 255, 0.15);
     border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px rgba(150,200,255,0.9);
-    animation: desaparecer 0.6s forwards;
+    z-index: 1; 
+    animation: flotar 20s infinite ease-in-out; 
+    box-shadow: 0 0 10px rgba(160, 210, 255, 0.2);
 }
 
-@keyframes desaparecer {
-    from { transform: scale(1); opacity: 1; }
-    to { transform: scale(2); opacity: 0; }
+@keyframes flotar {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    33% {
+        transform: translateY(-20vh) translateX(5vw) scale(1.1);
+        opacity: 0.8;
+    }
+    66% {
+        transform: translateY(-40vh) translateX(-5vw) scale(0.9);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
 }
+
+.b1 { width: 60px; height: 60px; top: 10%; left: 10%; animation-delay: 0s; animation-duration: 15s; }
+.b2 { width: 30px; height: 30px; top: 80%; right: 5%; animation-delay: 3s; animation-duration: 20s; }
+.b3 { width: 100px; height: 100px; bottom: 5%; left: 30%; animation-delay: 7s; animation-duration: 25s; }
+.b4 { width: 50px; height: 50px; top: 25%; right: 20%; animation-delay: 1s; animation-duration: 18s; }
+.b5 { width: 80px; height: 80px; bottom: 15%; right: 40%; animation-delay: 5s; animation-duration: 22s; }
